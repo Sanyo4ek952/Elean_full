@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231205153701">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231208175857">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,6 @@
 				<div class="header__block-top block-top-header">
 					<div class="block-top-header__witgh">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
-
 						<a href="" class="block-top-header__like">
 							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
 								<path d="M10.7965 3.27615C10.1877 2.73743 7.85542 0.801656 5.79016 0.82144C3.67352 0.841984 0.406316 2.20478 0.681891 6.24296C0.92555 9.81014 10.6345 17.1454 10.6345 17.1454C10.6953 17.1895 10.7583 17.1895 10.8237 17.1454C10.8237 17.1454 20.5327 9.80938 20.7763 6.24296C21.0519 2.20478 17.7847 0.841984 15.6673 0.82144C13.2689 0.798612 10.51 3.41312 10.51 3.41312L8.637 5.29182" stroke="#333333" stroke-miterlimit="3.8637" />
@@ -116,8 +115,8 @@
 									</li>
 								</ul>
 							</li>
-							<li class="menu__item header-body-menu__iteme"><a href="#" class="menu__link header-body-menu__link">О
-									бренде</a>
+							<li class="menu__item header-body-menu__iteme">
+								<div class="menu__link header-body-menu__link">О бренде</div>
 								<ul class="menu__list header-body-menu__sub-list">
 									<li class="menu__item header-body-menu__sub-iteme"><a href="" class="menu__link header-body-menu__sub-link">Шоурум</a>
 									</li>
@@ -156,214 +155,288 @@
 				</div>
 			</div>
 		</header>
-		<div class="delivery">
-			<div class="delivery__title title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat,
-				deserunt enim modi praesentium excepturi nostrum quia rem ex reiciendis neque dicta optio? Deserunt hic
-				possimus aliquid, doloribus soluta eos minus inventore mollitia et dolores, distinctio, aperiam eligendi
-				perspiciatis. Quod, quidem alias. Error ratione sint veritatis id corrupti, repellat autem earum aperiam ea,
-				necessitatibus qui! Perspiciatis hic quasi placeat unde voluptas amet odio facere. Nam, fuga rerum, quod
-				quisquam quidem, voluptas ipsa amet similique officia hic possimus aperiam! Nulla porro dignissimos pariatur
-				temporibus dolorem dicta laudantium, quae tenetur iusto nobis earum atque quas, voluptate quibusdam
-				blanditiis. Officiis vero a quasi fuga necessitatibus ipsa molestiae minima, modi aliquid similique tempora!
-				Ab excepturi placeat quasi eligendi incidunt! Ipsam doloremque exercitationem quaerat provident quas
-				quibusdam corporis minima, fugiat sunt harum ducimus tenetur commodi, dolorem, rem optio adipisci animi
-				sequi. Nulla aspernatur excepturi, tenetur hic quos odio eveniet voluptate quaerat nam perspiciatis quia
-				doloribus.</div>
-			<nav class="delivery__menu menu-delivery">
-				<ul class="menu-delivery__list">
-					<li class="menu-delivery__list"><a href="" class="menu-delivery__link"></a></li>
-					<li class="menu-delivery__list"><a href="" class="menu-delivery__link"></a></li>
-					<li class="menu-delivery__list"><a href="" class="menu-delivery__link"></a></li>
-				</ul>
-				<div data-tabs class="delivery">
-					<div class="delivery__container">
-						<nav data-tabs-titles class="delivery__navigation">
-							<button type="button" class="delivery__title _tab-active">Таб №1</button>
-							<button type="button" class="delivery__title">Таб №2</button>
-							<button type="button" class="delivery__title">Таб №3</button>
-						</nav>
-						<div data-tabs-body class="delivery__content">
-							<div class="delivery__body">
-								<div class="delivery__kind">
-									<div class="delivery__main-image-ibg">
-										<picture><source srcset="img/delivery/main.webp" type="image/webp"><img class="delivery__img" src="img/delivery/main.png" alt=""></picture>
+		<div data-tabs class="delivery">
+			<div class="delivery__title title">Доставка</div>
+			<nav data-tabs-titles class="delivery__navigation  navigation-delivery">
+				<button type="button" class="navigation-delivery__title _tab-active">ОБМЕН </button>
+				<button type="button" class="navigation-delivery__title">ВОЗВРАТ</button>
+				<button type="button" class="navigation-delivery__title">ОПЛАТА</button>
+			</nav>
+			<div class="delivery__container">
+				<div data-tabs-body class="delivery__content">
+					<div class="delivery__body">
+						<div class="delivery__kind">
+							<div class="delivery__main-image-ibg">
+								<picture><source srcset="img/delivery/main.webp" type="image/webp"><img class="delivery__img" src="img/delivery/main.png" alt=""></picture>
+							</div>
+							<div class="delivery__text content-delivery">
+								<div class="content-delivery__title title">ВИДЫ ДОСТАВКИ</div>
+								<div class="content-delivery__text">
+									<p class="content-delivery__iteme">Механизм нашей работы продуман до мелочей. Вам не
+										придется беспокоиться и долго ждать.</p>
+									<p class="content-delivery__iteme">Служба доставки работает без выходных с 8 утра до 1
+										часа ночи. Мы осуществляем доставку по Москве и ближайшему
+										Подмосковью.</p>
+									<p class="content-delivery__iteme">Оформляя заказ, просто выберите подходящий вам
+										временной интервал и мы доставим ваши продукты точно в указанное время.</p>
+									<div class="content-delivery__iteme content-delivery__iteme_icon">
+										<p class="content-delivery__iteme-clock"> Срок доставки с момента подтверждения
+											заказа
+											— 1-3 дня.</p>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#delivery-clock"></use>
+										</svg>
 									</div>
-									<div class="delivery__text content-delivery">
-										<div class="content-delivery__title"> </div>
-										<div class="content-delivery__text">
-											<p class="content-delivery__iteme">Механизм нашей работы продуман до мелочей. Вам не
-												придется беспокоиться и долго ждать.</p>
-											<p class="content-delivery__iteme">Служба доставки работает без выходных с 8 утра до 1
-												часа ночи. Мы осуществляем доставку по Москве и ближайшему
-												Подмосковью.</p>
-											<p class="content-delivery__iteme">Оформляя заказ, просто выберите подходящий вам
-												временной интервал и мы доставим ваши продукты точно в указанное время.</p>
-											<p class="content-delivery__iteme">Срок доставки с момента подтверждения
-												заказа — 1-3 дня.</p>
-											<p class="content-delivery__iteme">Доставка во все регионы осуществляется по 100%
-												предоплате на нашем сайте любой картой, курьерской службой до двери.</p>
-											<p class="content-delivery__iteme">При покупке на сумму от 15 000₽ доставка в подарок,
-												в
-												остальных случаях 500₽, за границу 1 200₽.</p>
+									<div class="content-delivery__iteme content-delivery__iteme_icon">
+										<div class="content-delivery__iteme-present">
+											<p> Доставка во все регионы осуществляется
+												по 100% предоплате на нашем сайте любой картой, курьерской службой до двери.
+											</p>
+											<p class="content-delivery__iteme">При покупке на сумму от 15 000₽ доставка в
+												подарок, в остальных случаях 500₽, за границу 1 200₽.</p>
 										</div>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#delivery-present"></use>
+										</svg>
 									</div>
+
 								</div>
 							</div>
-							<div class="delivery__body">
-								Вміст другого таба
+						</div>
+						<div class="delivery__questions-answers questions-answers-delivery">
+							<div class="questions-answers-delivery__title title">ВОПРОСЫ И ОТВЕТЫ</div>
+							<div class="questions-answers-delivery__colomns">
+								<div class="questions-answers-delivery__colomn column-questions-answers-delivery">
+									<div class="column-questions-answers-delivery__title">ЕСТЬ ЛИ ДОСТАВКА ЗАГРАНИЦУ ?
+										<svg>
+											<use xlink:href="img/icons/icons.svg#delivery-qestion"></use>
+										</svg>
+									</div>
+									<div class="column-questions-answers-delivery__text">Да, доставка заграницу
+										осуществляется
+										курьерской службой до двери. Доставка заграницу оплачивается при оформлении
+										заказа, фиксированная стоимость 1 200₽.
+									</div>
+								</div>
+								<div class="questions-answers-delivery__colomn column-questions-answers-delivery">
+									<div class="column-questions-answers-delivery__title">КАК ПОДАБРАТЬ СВОЙ РАЗМЕР?
+										<svg>
+											<use xlink:href="img/icons/icons.svg#delivery-qestion"></use>
+										</svg>
+									</div>
+									<div class="column-questions-answers-delivery__text">Максимально точно подобрать размер
+										мы
+										помогаем по меркам: обхват груди, талии и бёдер. Пришлите нам свои мерки и мы в 99%
+										случаев правильно подберем Ваш размер.</div>
+								</div>
+								<div class="questions-answers-delivery__colomn column-questions-answers-delivery">
+									<div class="column-questions-answers-delivery__title">КАК ПРИМЕРИТЬ?
+										<svg>
+											<use xlink:href="img/icons/icons.svg#delivery-qestion"></use>
+										</svg>
+									</div>
+									<div class="column-questions-answers-delivery__text">
+										<p> В Москве примерить все образы можно в шоуруме по адресу: Новая площадь 8 стр 2,
+											5 этаж, также Вы можете заказать доставку с выездным стилистом (в том числе
+											ближайшее Подмосковье до 5 км от МКАД).
+										</p>
+										<p>
+											Примерка в регионах России возможна при получении при курьере в течение 15 минут.
+										</p>
+									</div>
+								</div>
+								<div class="questions-answers-delivery__colomn column-questions-answers-delivery">
+									<div class="column-questions-answers-delivery__title">ЧТО ДЕЛАТЬ, ЕСЛИ МНЕ НЕ ПОДОЙДЕТ?
+										<svg>
+											<use xlink:href="img/icons/icons.svg#delivery-qestion"></use>
+										</svg>
+									</div>
+									<div class="column-questions-answers-delivery__text">В случае если что-то не подходит,
+										мы
+										за свой счёт делаем замену размера, возврат клиент осуществляет до нашего офиса
+										самостоятельно, возврат денежных средств происходит в течение 3-х дней на карту с
+										которой была произведена оплата.</div>
+								</div>
 							</div>
-							<div class="delivery__body">
-								Вміст третього таба
+						</div>
+						<div class="delivery__question-form question-form-delivery">
+							<div class="forms-mainpage__box question-form-delivery__box">
+								<div class="forms-mainpage__icon question-form-delivery__icon">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#delivery-qustion-form"></use>
+									</svg>
+								</div>
+								<div class="forms-mainpage__title question-form-delivery__title  title">ЗАДАТЬ ВОПРОС
+								</div>
+								<form action="" class="forms-mainpage__form question-form-delivery__form form-forms-mainpage">
+									<div class="form-forms-mainpage__contacts question-form-delivery__contacts">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка " placeholder="ВВЕДИТЕ ИМЯ *" class="input form-forms-mainpage__input">
+										<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка " placeholder="ВВЕДИТЕ ТЕЛЕФОН *" class="input form-forms-mainpage__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка " placeholder="ВВЕДИТЕ УДОБНОЕ ВРЕМЯ *" class="input form-forms-mainpage__input">
+									</div>
+									<div class="form-forms-mainpage__coment-btn">
+										<textarea name="form[]" id="" placeholder="ДОБАВИТЬ КОММЕНТАРИЙ *" class="input form-forms-mainpage__textarea"></textarea>
+										<button type="submit" class="form-forms-mainpage__button button">ОТПРАВИТЬ</button>
+									</div>
+									<div class="forms-mainpage__coment">Поля отмеченные “*” обязательны для заполнения
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
-
+					<div class="delivery__body">
+						Другая страница 2
+					</div>
+					<div class="delivery__body">
+						Другая страница 3
+					</div>
 				</div>
-			</nav>
+			</div>
 		</div>
-		<footer class="footer">
-			<div class="footer__container footer__container_pc">
-				<div class="footer__contacts">
-					<div class="footer__logo">ELEAN</div>
-					<a href="tel:84951501477" class="footer__tell">ТЕЛ.: 8 (495) 150-14-77</a>
-					<a href="https://wa.me/84951501477" class="footer__whatsapp">WHATSAPP: +7 (977) 728-27-38</a>
-					<a href="mailto:info@eleanboutique.ru" class="footer__email">EMAIL: info@eleanboutique.ru</a>
-				</div>
-				<div class="footer__mid">
-					<nav class="footer__menu menu-footer">
-						<ul class="menu-footer__list">
-							<li class="menu-footer__iteme">
-								<a href="" class="menu-footer__link">ДОСТАВКА</a>
-							</li>
-							<li class="menu-footer__iteme">
-								<a href="" class="menu-footer__link">ОПЛАТА</a>
-							</li>
-							<li class="menu-footer__iteme">
-								<a href="" class="menu-footer__link">ВОЗВРАТ</a>
-							</li>
-							<li class="menu-footer__iteme">
-								<a href="" class="menu-footer__link">РАЗМЕРНАЯ ТАБЛИЦА</a>
-							</li>
-							<li class="menu-footer__iteme">
-								<a href="" class="menu-footer__link">ПРИМЕРКА</a>
-							</li>
-							<li class="menu-footer__iteme">
-								<a href="" class="menu-footer__link">КОНТАКТЫ</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="footer__info info-footer">
-						<div class="info-footer__item"><span>АДРЕС:</span>г. Москва, Новая площадь 8, стр.2, 5 этаж
-						</div>
-						<div class="info-footer__item"><span>РЕЖИМ РАБОТЫ:</span>с 9.00 до 21.00 шоурум: с 12.00 до 21.00</div>
+		</nav>
+	</div>
+	<footer class="footer">
+		<div class="footer__container footer__container_pc">
+			<div class="footer__contacts">
+				<div class="footer__logo">ELEAN</div>
+				<a href="tel:84951501477" class="footer__tell">ТЕЛ.: 8 (495) 150-14-77</a>
+				<a href="https://wa.me/84951501477" class="footer__whatsapp">WHATSAPP: +7 (977) 728-27-38</a>
+				<a href="mailto:info@eleanboutique.ru" class="footer__email">EMAIL: info@eleanboutique.ru</a>
+			</div>
+			<div class="footer__mid">
+				<nav class="footer__menu menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__iteme">
+							<a href="" class="menu-footer__link">ДОСТАВКА</a>
+						</li>
+						<li class="menu-footer__iteme">
+							<a href="" class="menu-footer__link">ОПЛАТА</a>
+						</li>
+						<li class="menu-footer__iteme">
+							<a href="" class="menu-footer__link">ВОЗВРАТ</a>
+						</li>
+						<li class="menu-footer__iteme">
+							<a href="" class="menu-footer__link">РАЗМЕРНАЯ ТАБЛИЦА</a>
+						</li>
+						<li class="menu-footer__iteme">
+							<a href="" class="menu-footer__link">ПРИМЕРКА</a>
+						</li>
+						<li class="menu-footer__iteme">
+							<a href="" class="menu-footer__link">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__info info-footer">
+					<div class="info-footer__item"><span>АДРЕС:</span>г. Москва, Новая площадь 8, стр.2, 5 этаж
 					</div>
-					<div class="footer__soc">
-						<a href="" class="_icon-instagram"></a>
-						<a href="" class="_icon-vk"></a>
-						<a href="" class="_icon-fb"></a>
+					<div class="info-footer__item"><span>РЕЖИМ РАБОТЫ:</span>с 9.00 до 21.00 шоурум: с 12.00 до 21.00</div>
+				</div>
+				<div class="footer__soc">
+					<a href="" class="_icon-instagram"></a>
+					<a href="" class="_icon-vk"></a>
+					<a href="" class="_icon-fb"></a>
+				</div>
+			</div>
+			<div class="footer__forms">
+				<form class="footer__form" action="#">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка " placeholder="ИМЯ" class="input footer__input">
+					<input autocomplete="off" type="text" name="form[]" data-required="email" data-validate data-error="Ошибка " placeholder="E-MAIL" class="input footer__input">
+					<div class="checkbox">
+						<input id="c_1" data-error="Ошибка " class="checkbox__input" type="checkbox" value="1" name="form[]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text footer__checkbox-text"><span> Я
+									согласен </span> с
+								политикой конфиденциальности</span></label>
 					</div>
-				</div>
-				<div class="footer__forms">
-					<form class="footer__form" action="#">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка " placeholder="ИМЯ" class="input footer__input">
-						<input autocomplete="off" type="text" name="form[]" data-required="email" data-validate data-error="Ошибка " placeholder="E-MAIL" class="input footer__input">
-						<div class="checkbox">
-							<input id="c_1" data-error="Ошибка " class="checkbox__input" type="checkbox" value="1" name="form[]">
-							<label for="c_1" class="checkbox__label"><span class="checkbox__text footer__checkbox-text"><span> Я
-										согласен </span> с
-									политикой конфиденциальности</span></label>
-						</div>
-						<button type="submit" class="footer__button">ПОДПИСАТЬСЯ</button>
-					</form>
-				</div>
-
+					<button type="submit" class="footer__button">ПОДПИСАТЬСЯ</button>
+				</form>
 			</div>
 
-			<div class="footer__mobile mobile-footer">
-				<div class="footer__container">
-					<nav class="mobile-footer__menu">
-						<ul class="mobile-footer__list">
-							<li class="mobile-footer__iteme"><a href="catalog.html" class="mobile-footer__link">КОЛЛЕКЦИЯ</a>
-								<ul class="menu__list mobile-footer__sub-list">
-									<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-dresses.html" class="menu__link mobile-footer__sub-link">Юбки</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-tux.html" class="menu__link mobile-footer__sub-link">Смокинг</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-costumes.html" class="menu__link mobile-footer__sub-link">Костюмы</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-accessories.html" class="menu__link mobile-footer__sub-link">Аксессуары</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-pants.html" class="menu__link mobile-footer__sub-link">Брюки</a>
-									</li>
-								</ul>
-							</li>
-							<li class="mobile-footer__iteme"><a href="" class="mobile-footer__link">ШОУРУМ</a>
-								<ul class="menu__list mobile-footer__sub-list">
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Осень-зима 20-21</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Вечерние
-											комплекты</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Предзаказ</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Свадьба и
-											выпускной</a>
-									</li>
-								</ul>
-							</li>
-							<li class="mobile-footer__iteme"><a href="" class="mobile-footer__link">ПОКУПАТЕЛЯМ</a>
-								<ul class="menu__list mobile-footer__sub-list">
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Оплата </a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Доставка</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Акции</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Возврат</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Размерная таблица</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Примерка</a>
-									</li>
-									<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Оптовым покупателям</a>
-									</li>
-								</ul>
-							</li>
-							<li class="mobile-footer__iteme"><a href="#" class="mobile-footer__link">КОМПАНИЯ</a></li>
-							<li class="mobile-footer__iteme"><a href="#" class="mobile-footer__link">ОТЗЫВЫ</a></li>
-							<li class="mobile-footer__iteme"><a href="#" class="mobile-footer__link">КОНТАКТЫ</a>
-								<div class="footer__contacts mobile-footer__contacts">
-									<a href="tel:84951501477" class="footer__tell">ТЕЛ.: 8 (495) 150-14-77</a>
-									<div class="footer__whatsapp">WHATSAPP: +7 (977) 728-27-38</div>
-									<a href="mailto:info@eleanboutique.ru" class="footer__email">EMAIL: info@eleanboutique.ru
-									</a>
-									<div class="info-footer__item">г. Москва, Новая площадь 8, стр.2, 5 этаж
-									</div>
+		</div>
+
+		<div class="footer__mobile mobile-footer">
+			<div class="footer__container">
+				<nav class="mobile-footer__menu">
+					<ul class="mobile-footer__list">
+						<li class="mobile-footer__iteme"><a href="catalog.html" class="mobile-footer__link">КОЛЛЕКЦИЯ</a>
+							<ul class="menu__list mobile-footer__sub-list">
+								<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-dresses.html" class="menu__link mobile-footer__sub-link">Юбки</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-tux.html" class="menu__link mobile-footer__sub-link">Смокинг</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-costumes.html" class="menu__link mobile-footer__sub-link">Костюмы</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-accessories.html" class="menu__link mobile-footer__sub-link">Аксессуары</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="catalog-pants.html" class="menu__link mobile-footer__sub-link">Брюки</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-footer__iteme"><a href="" class="mobile-footer__link">ШОУРУМ</a>
+							<ul class="menu__list mobile-footer__sub-list">
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Осень-зима 20-21</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Вечерние
+										комплекты</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Предзаказ</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Свадьба и
+										выпускной</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-footer__iteme"><a href="" class="mobile-footer__link">ПОКУПАТЕЛЯМ</a>
+							<ul class="menu__list mobile-footer__sub-list">
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Оплата </a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Доставка</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Акции</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Возврат</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Размерная таблица</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Примерка</a>
+								</li>
+								<li class="menu__item mobile-footer__sub-iteme"><a href="" class="menu__link mobile-footer__sub-link">Оптовым покупателям</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-footer__iteme"><a href="#" class="mobile-footer__link">КОМПАНИЯ</a></li>
+						<li class="mobile-footer__iteme"><a href="#" class="mobile-footer__link">ОТЗЫВЫ</a></li>
+						<li class="mobile-footer__iteme"><a href="#" class="mobile-footer__link">КОНТАКТЫ</a>
+							<div class="footer__contacts mobile-footer__contacts">
+								<a href="tel:84951501477" class="footer__tell">ТЕЛ.: 8 (495) 150-14-77</a>
+								<div class="footer__whatsapp">WHATSAPP: +7 (977) 728-27-38</div>
+								<a href="mailto:info@eleanboutique.ru" class="footer__email">EMAIL: info@eleanboutique.ru
+								</a>
+								<div class="info-footer__item">г. Москва, Новая площадь 8, стр.2, 5 этаж
 								</div>
-							</li>
-						</ul>
-					</nav>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer__contacts mobile-footer__contacts">
+				<div class="footer__logo">ELEAN</div>
+				<a href="tel:84951501477" class="footer__tell">ТЕЛ.: 8 (495) 150-14-77</a>
+				<div class="footer__whatsapp">WHATSAPP: +7 (977) 728-27-38</div>
+				<a href="mailto:info@eleanboutique.ru" class="footer__email">EMAIL: info@eleanboutique.ru</a>
+				<div class="info-footer__item">г. Москва, Новая площадь 8, стр.2, 5 этаж
 				</div>
-				<div class="footer__contacts mobile-footer__contacts">
-					<div class="footer__logo">ELEAN</div>
-					<a href="tel:84951501477" class="footer__tell">ТЕЛ.: 8 (495) 150-14-77</a>
-					<div class="footer__whatsapp">WHATSAPP: +7 (977) 728-27-38</div>
-					<a href="mailto:info@eleanboutique.ru" class="footer__email">EMAIL: info@eleanboutique.ru</a>
-					<div class="info-footer__item">г. Москва, Новая площадь 8, стр.2, 5 этаж
+			</div>
+			<div class="mobile-footer__subscribe">
+				<form action="" class="mobile-footer__field">
+					<label for="">ПОДПИСАТЬСЯ НА НОВОСТИ</label>
+					<div class="mobile-footer__box">
+						<input data-required="email" data-validate autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите адрес электронной почты" class="mobile-footer__input">
+						<button type="submit" class=" mobile-footer__button"></button>
 					</div>
-				</div>
-
-
-				<div class="mobile-footer__subscribe">
-					<form action="" class="mobile-footer__field">
-						<label for="">ПОДПИСАТЬСЯ НА НОВОСТИ</label>
-						<div class="mobile-footer__box">
-							<input data-required="email" data-validate autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите адрес электронной почты" class="mobile-footer__input">
-							<button type="submit" class=" mobile-footer__button"></button>
-						</div>
-					</form>
-				</div>
-				<div class="mobile-footer__basement">
+				</form>
+			</div>
+			<div class="mobile-footer__basement">
+				<div class="mobile-footer__container">
 					<div class="mobile-footer__soc">
 						<a href="" class="_icon-instagram"></a>
 						<a href="" class="_icon-vk"></a>
@@ -378,8 +451,9 @@
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- Оболонка слайдера -->
+		</div>
+	</footer>
+	<!-- Оболонка слайдера -->
 	</div>
 	<div id="bascet" aria-hidden="true" class="bascet popup">
 		<div class="bascet__wrapper popup__wrapper">
@@ -786,7 +860,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231205153701"></script>
+	<script src="js/app.min.js?_v=20231208175857"></script>
 </body>
 
 </html>

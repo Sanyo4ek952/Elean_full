@@ -3,7 +3,7 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: futurademic;
+  font-family: FuturaDemiC;
   font-display: swap;
   src: url("../fonts/futurademic.woff2") format("woff2"), url("../fonts/futurademic.woff") format("woff");
   font-weight: 400;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: futurabookc;
+  font-family: FuturaBookC;
   font-display: swap;
   src: url("../fonts/futurabookc.woff2") format("woff2"), url("../fonts/futurabookc.woff") format("woff");
   font-weight: 400;
@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: futuraMediumc;
+  font-family: FuturaMediumC;
   font-display: swap;
   src: url("../fonts/futuramediumc.woff2") format("woff2"), url("../fonts/futuramediumc.woff") format("woff");
   font-weight: 400;
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: helveticaneuecyr;
+  font-family: HelveticaNeueCyr;
   font-display: swap;
   src: url("../fonts/helveticaneuecyr-roman.woff2") format("woff2"), url("../fonts/helveticaneuecyr-roman.woff") format("woff");
   font-weight: 400;
@@ -1541,6 +1541,16 @@ body::after {
      object-fit: cover;
 }
 
+[class*=-ibg] video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 [class*=-ibg--contain] img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1560,16 +1570,6 @@ body::after {
   position: relative;
 }
 
-.slider-copy__container-cart-tovar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .slider-copy__title {
   margin-bottom: 30px;
 }
@@ -1577,12 +1577,6 @@ body::after {
 .slider-copy__slider {
   padding-bottom: 26px;
   position: relative !important;
-}
-
-.slider-copy__slider_cart-tovar {
-  max-width: 1137px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .slider-copy__wrapper {
@@ -2424,6 +2418,7 @@ body::after {
           flex-direction: column;
   gap: 1.875rem;
   margin-bottom: 1.5625rem;
+  padding: 0rem 0.9375rem;
 }
 
 .mobile-footer__box {
@@ -2472,6 +2467,11 @@ body::after {
 .mobile-footer__basement {
   border-top: 1px solid #e6e6e6;
   padding: 1.25rem 0rem;
+}
+
+.mobile-footer__container {
+  border-top: 1px solid #e6e6e6;
+  padding: 1.25rem 0.9375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3769,22 +3769,36 @@ body::after {
           justify-content: center;
 }
 
+.delivery {
+  padding-top: 11.5625rem;
+}
+
+.delivery__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ddcdbd;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .delivery__title {
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 .delivery__kind {
+  padding: 2.1875rem 0rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto minmax(580px, 580px);
-  grid-template-columns: auto minmax(580px, 580px);
 }
 
 .delivery__main-image-ibg {
-  padding-top: 73.82%;
+  padding-top: 76%;
 }
 
 .delivery__text {
+  font-family: HelveticaNeueCyr;
   color: #171717;
   font-size: 15px;
   line-height: 24px;
@@ -3793,8 +3807,160 @@ body::after {
   padding-left: 2.9375rem;
 }
 
-.content-delivery__iteme:not(:last-child) {
+.delivery__questions-answers {
+  padding: 2.1875rem 0rem;
+}
+
+.navigation-delivery__title {
+  padding: 0.3125rem 3.4375rem;
+  color: #d1b59a;
+  text-align: center;
+  font-family: FuturaMediumC;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  /* 138.462% */
+  letter-spacing: 0.65px;
+  border-right: 1px solid #ddcdbd;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.navigation-delivery__title:first-child {
+  border-left: 1px solid #ddcdbd;
+}
+
+._tab-active {
+  background: #d1b59a;
+  color: #fff;
+}
+
+.content-delivery__title {
+  color: #000;
+  font-family: FuturaBookC;
+  font-size: 21px;
+  line-height: 20px;
+  /* 95.238% */
+  letter-spacing: 1.05px;
+  padding-bottom: 0.625rem;
+}
+
+.content-delivery__iteme {
+  padding: 0.8125rem 0rem 0.8125rem;
+}
+
+.content-delivery__iteme_icon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 40px;
+  grid-template-columns: auto 40px;
+  gap: 1.875rem;
+}
+
+.content-delivery__iteme svg {
+  height: 40px;
+  width: 100%;
+}
+
+.questions-answers-delivery__title {
+  padding-bottom: 1.875rem;
+}
+
+.questions-answers-delivery__colomns {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+  -webkit-column-gap: 1.8125rem;
+     -moz-column-gap: 1.8125rem;
+          column-gap: 1.8125rem;
+}
+
+.questions-answers-delivery__colomn {
+  border: 1px dashed #d1b59a;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.column-questions-answers-delivery__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  /* 111.111% */
+  letter-spacing: 0.9px;
+  padding: 1.4375rem 1.25rem 1.4375rem 2.25rem;
+  border-bottom: 1px dashed #d1b59a;
+}
+
+.column-questions-answers-delivery__title svg {
+  width: 1.6875rem;
+  height: 1.6875rem;
+  fill: #d1b59a;
+}
+
+.column-questions-answers-delivery__text {
+  font-family: HelveticaNeueCyr;
+  font-size: 15px;
+  line-height: 22px;
+  /* 146.667% */
+  letter-spacing: 0.75px;
+  padding: 1.5625rem 1.25rem 1.5625rem 2.25rem;
+}
+
+.column-questions-answers-delivery__text p:not(:last-child) {
   padding-bottom: 1.5625rem;
+}
+
+.question-form-delivery {
+  padding: 2.1875rem 0rem 0rem;
+}
+
+.question-form-delivery__box {
+  padding: 3.125rem 0.9375rem;
+}
+
+.question-form-delivery__icon svg {
+  width: 2.25rem;
+  height: 2.1875rem;
+  fill: #d1b59a;
+}
+
+.question-form-delivery__form {
+  max-width: 906px;
+  margin: 0 auto;
+}
+
+.reviews-main {
+  padding-top: 11.5625rem;
+  padding-bottom: 1.875rem;
+}
+
+.reviews-main__title {
+  padding-bottom: 2.5rem;
+}
+
+.reviews-main__slider {
+  width: 100%;
+}
+
+.reviews-main__slide {
+  max-width: 324px !important;
+}
+
+.reviews-main__image-ibg {
+  width: 20.25rem;
+  padding-top: 100%;
+}
+
+.reviews-slider-copy {
+  padding: 1.875rem 0rem;
 }
 
 .swiper {
@@ -4352,6 +4518,36 @@ body::after {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .delivery__kind {
+    -ms-grid-columns: 56% auto;
+    grid-template-columns: 56% auto;
+  }
+
+  .content-delivery__title {
+    text-align: left;
+  }
+
+  .content-delivery__iteme-clock {
+    max-width: 330px;
+  }
+
+  .content-delivery__iteme-present {
+    max-width: 443px;
+  }
+
+  .questions-answers-delivery__colomns {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .column-questions-answers-delivery__title {
+    font-family: FuturaBookC;
+    font-size: 21px;
+    line-height: 20px;
+    /* 95.238% */
+    letter-spacing: 1.05px;
+  }
 }
 
 @media (min-width: 47.99875em) and (any-hover: hover) {
@@ -4542,6 +4738,10 @@ body::after {
   .info-tovar-cart-tovar {
     padding-top: 3.375rem;
   }
+
+  .delivery__text {
+    padding-left: 2.9375rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -4713,6 +4913,10 @@ body::after {
 
   .info-tovar-cart-tovar {
     padding-top: 1.5625rem;
+  }
+
+  .delivery__text {
+    padding-left: 0.9375rem;
   }
 }
 
@@ -5120,6 +5324,22 @@ body::after {
 
   .info-tovar-cart-tovar__punct:not(:last-child) {
     padding-bottom: 1.875rem;
+  }
+
+  .delivery {
+    padding-top: 6.25rem;
+  }
+
+  .delivery__main-image-ibg {
+    display: none;
+  }
+
+  .content-delivery__iteme {
+    padding: 0.9375rem 0rem 0.9375rem;
+  }
+
+  .reviews-main {
+    padding-top: 7.5rem;
   }
 }
 
@@ -5719,6 +5939,18 @@ body::after {
 @supports not (padding-top: clamp( 1.5625rem , 1.0101190476rem  +  2.7619047619vw , 3.375rem )) {
     .info-tovar-cart-tovar {
       padding-top: calc(1.5625rem + 1.8125 * (100vw - 20rem) / 65.625);
+    }
+}
+
+@supports (padding-left: clamp( 0.9375rem , 0.3279761905rem  +  3.0476190476vw , 2.9375rem )) {
+    .delivery__text {
+      padding-left: clamp( 0.9375rem , 0.3279761905rem  +  3.0476190476vw , 2.9375rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.9375rem , 0.3279761905rem  +  3.0476190476vw , 2.9375rem )) {
+    .delivery__text {
+      padding-left: calc(0.9375rem + 2 * (100vw - 20rem) / 65.625);
     }
 }
 }

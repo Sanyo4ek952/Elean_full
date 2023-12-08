@@ -4985,26 +4985,9 @@
                 modules: [ Autoplay ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 1.2,
+                slidesPerView: 1,
                 spaceBetween: 0,
                 speed: 800,
-                loop: true,
-                autoplay: {
-                    delay: 3e3,
-                    disableOnInteraction: false
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true
-                },
-                scrollbar: {
-                    el: ".swiper-scrollbar",
-                    draggable: true
-                },
-                navigation: {
-                    prevEl: ".swiper-button-prev",
-                    nextEl: ".swiper-button-next"
-                },
                 breakpoints: {
                     640: {
                         slidesPerView: 2
@@ -5043,26 +5026,12 @@
                 modules: [ Navigation, Pagination, Autoplay ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 4,
+                slidesPerView: "auto",
                 spaceBetween: 33,
                 speed: 800,
                 autoplay: {
                     delay: 3e3,
                     disableOnInteraction: false
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2
-                    },
-                    768: {
-                        slidesPerView: 2
-                    },
-                    1166: {
-                        slidesPerView: 3
-                    },
-                    1268: {
-                        slidesPerView: 4
-                    }
                 },
                 on: {}
             });
@@ -5070,26 +5039,26 @@
                 modules: [ Navigation, Pagination, Autoplay ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 3,
+                slidesPerView: "auto",
                 spaceBetween: 10,
                 speed: 800,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 3,
-                        spaceBetween: 10
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 10
-                    },
-                    992: {
-                        slidesPerView: 4,
-                        spaceBetween: 20
-                    },
-                    1268: {
-                        slidesPerView: 3,
-                        spaceBetween: 37
-                    }
+                on: {}
+            });
+            if (document.querySelector(".reviews-main__slider")) new swiper_core_Swiper(".reviews-main__slider", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 14,
+                speed: 800,
+                rewind: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next"
                 },
                 on: {}
             });

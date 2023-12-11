@@ -5045,11 +5045,11 @@
                 on: {}
             });
             if (document.querySelector(".reviews-main__slider")) new swiper_core_Swiper(".reviews-main__slider", {
-                modules: [ Navigation, Pagination ],
+                modules: [],
                 observer: true,
                 observeParents: true,
                 slidesPerView: "auto",
-                spaceBetween: 14,
+                spaceBetween: 10,
                 speed: 800,
                 rewind: true,
                 pagination: {
@@ -5059,6 +5059,42 @@
                 navigation: {
                     prevEl: ".swiper-button-prev",
                     nextEl: ".swiper-button-next"
+                },
+                on: {}
+            });
+            if (document.querySelector(".video-speciman-page__slider")) new swiper_core_Swiper(".video-speciman-page__slider", {
+                modules: [ Navigation, Pagination, Autoplay ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 15,
+                speed: 800,
+                rewind: true,
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next"
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    992: {
+                        slidesPerView: 3
+                    },
+                    1268: {
+                        slidesPerView: 3
+                    }
                 },
                 on: {}
             });

@@ -4988,6 +4988,10 @@
                 slidesPerView: 1,
                 spaceBetween: 0,
                 speed: 800,
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
                 breakpoints: {
                     640: {
                         slidesPerView: 2
@@ -5005,13 +5009,17 @@
                 on: {}
             });
             if (document.querySelector(".slider-copy__slider")) new swiper_core_Swiper(".slider-copy__slider", {
-                modules: [ Navigation, Pagination ],
+                modules: [ Navigation, Pagination, Autoplay ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 14,
                 speed: 800,
                 rewind: true,
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
